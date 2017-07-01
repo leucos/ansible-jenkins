@@ -1,0 +1,14 @@
+- name: Adds jenkins repos key
+  apt_key:
+    url: https://pkg.jenkins.io/debian-stable/jenkins.io.key
+    state: present
+
+- name: Adds repos source
+  apt_repository:
+    repo: deb https://pkg.jenkins.io/debian-stable binary/
+    update_cache: yes
+
+- name: Installe jenkins
+  apt:
+    pkg: jenkins
+
