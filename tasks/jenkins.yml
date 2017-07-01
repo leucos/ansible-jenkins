@@ -13,6 +13,7 @@
     pkg: jenkins
 
 - name: Adds jenkins to requested groups
-  user: jenkins
+  user:
+    name: jenkins
     append: yes
     groups: jenkins_additionnal_groups
