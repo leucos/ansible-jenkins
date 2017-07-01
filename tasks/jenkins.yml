@@ -16,4 +16,4 @@
   user:
     name: jenkins
     append: yes
-    groups: jenkins_additionnal_groups
+    groups: "{{ jenkins_additionnal_groups }}"
