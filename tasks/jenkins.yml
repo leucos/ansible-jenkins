@@ -12,3 +12,7 @@
   apt:
     pkg: jenkins
 
+- name: Adds jenkins to requested groups
+  user: jenkins
+    append: yes
+    groups: jenkins_additionnal_groups
